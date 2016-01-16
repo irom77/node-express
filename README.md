@@ -1,2 +1,2 @@
 # node-express for Docker Hub
-Express-Node.js
+Node.js on Ubuntu 14.04
