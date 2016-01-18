@@ -1,4 +1,6 @@
 #!/bin/bash
+# remove line endings
+#$ sed 's/^M$//' entrypoint-win.sh > entrypoint.sh
 if [ $# -eq 0 ]; then
     #start simple http server
     http-server
