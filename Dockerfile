@@ -14,7 +14,7 @@ WORKDIR /home/nodexp
 # COPY . /home/nodexp
 #COPY cmd.sh /
 COPY entrypoint.sh /
-RUN chmod +x ./entrypoint.sh
+RUN chmod +x /entrypoint.sh
 EXPOSE 8080 3000 3443 8000 8880
 USER nodexp
 #ONBUILD COPY package.json /home/nodexp
