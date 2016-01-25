@@ -20,5 +20,5 @@ USER nodexp
 #ONBUILD COPY package.json /home/nodexp
 #ONBUILD RUN npm install
 ONBUILD COPY . /home/nodexp
-#ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 #CMD ["/cmd.sh"]
