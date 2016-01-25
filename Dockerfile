@@ -9,11 +9,11 @@ RUN groupadd -r nodexp \
 WORKDIR /home/nodexp
 
 # Install app dependencies
-COPY package.json /home/nodexp
-RUN npm install
+ONBUILD COPY package.json /home/nodexp
+ONBUILD RUN npm install
 
 # Bundle app source
-COPY . /home/nodexp
+ONBUILD COPY . /home/nodexp
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
