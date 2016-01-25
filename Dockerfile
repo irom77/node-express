@@ -11,7 +11,7 @@ RUN apt-get update \
 #    && curl http://npmjs.org/install.sh | sh \
  && npm install http-server -g
 WORKDIR /home/nodexp
-# COPY . /home/nodexp
+#COPY . /home/nodexp
 #COPY cmd.sh /
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
