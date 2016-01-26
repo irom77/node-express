@@ -18,5 +18,6 @@ ONBUILD COPY . /home/nodexp
 EXPOSE 3000
 CMD [ "npm", "start" ]
 
+# Run docker
 # $ docker run -p 8080:3000 -d irom77/node
 # $ curl -i http://localhost:8080
